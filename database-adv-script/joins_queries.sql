@@ -16,7 +16,7 @@ SELECT p.id AS property_id,
        r.comment
 FROM properties p
 LEFT JOIN reviews r ON p.id = r.property_id;
-
+ORDER BY p.id, r.id;
 
 -- 3. FULL OUTER JOIN: Users and Bookings
 SELECT u.id AS user_id,
